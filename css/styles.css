@@ -1,6 +1,12 @@
 body {
     background-color: blanchedalmond;
-    background-image: url("https://images.pexels.com/photos/764880/pexels-photo-764880.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
+    background-image: url("https://images.pexels.com/photos/690303/pexels-photo-690303.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body image {
+    width: auto;
+    height: auto;
 }
 
 header {
@@ -9,7 +15,18 @@ header {
     text-decoration-line: underline;
 }
 
-/*.fancy-header {
-    color: purple;
-}*/
+ul li {
+    list-style-image: url("https://findicons.com/files/icons/1620/crystal_project/19/line_arrow_end.png");
+}
 
+table {
+    background-color: antiquewhite;
+}
+
+tr th {
+    font-size: 1.2em;
+
+}
+tr td {
+    padding: 25px;
+}
