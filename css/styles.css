@@ -1,3 +1,15 @@
-.fancy-header {
-    color: purple;
+body {
+    background-color: blanchedalmond;
+    background-image: url("https://images.pexels.com/photos/764880/pexels-photo-764880.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
 }
+
+header {
+    text-align: center;
+    color: purple;
+    text-decoration-line: underline;
+}
+
+/*.fancy-header {
+    color: purple;
+}*/
+
