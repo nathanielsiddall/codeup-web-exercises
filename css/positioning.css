@@ -1,0 +1,43 @@
+#ribbon {
+    position: relative;
+    top: -8px;
+    right: -300px;
+}
+.box {
+    border: 1px black solid;
+    height: 50px;
+    width: 50px;
+    padding: 11px 11px 11px 11px;
+    margin-top: 50px;
+    margin-right: 50px;
+    position: relative;
+    float: left;
+
+}
+.box>img {
+    position: relative;
+    top: -80px;
+    left: 38px;
+}
+
+.box:nth-child(5) {
+    clear: left;
+}
+#red {
+    background-color: red;
+}
+#orange {
+    background-color: orange;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+#purple {
+    background-color: purple;
+}
