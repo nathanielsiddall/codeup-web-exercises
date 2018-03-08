@@ -1,67 +1,41 @@
 
-
-.red {
+.box {
     border: 1px solid black;
+
+    width: 150px;
+    height: 50px;
+    padding: 11px 11px;
+    font-weight: bold;
+    color: white;
+}
+
+#boxred {
     background-color: red;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 0;
-    font-weight: bold;
-    color: white;
+
 }
 
-.orange{
-    border: 1px solid black;
+#boxorange{
     background-color: orange;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 30px;
-    font-weight: bold;
-    color: white;
 }
 
-.yellow{
-    border: 1px solid black;
+#boxyellow{
     background-color: yellow;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 60px;
-    font-weight: bold;
-    color: white;
 }
 
-.green{
-    border: 1px solid black;
+#boxgreen{
     background-color: green;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 90px;
-    font-weight: bold;
-    color: white;
 }
 
-.blue{
-    border: 1px solid black;
+#boxblue{
     background-color: blue;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 120px;
-    font-weight: bold;
-    color: white;
 }
 
-.purple{
-    border: 1px solid black;
+#boxpurple{
     background-color: purple;
-    width: 150px;
-    height: 50px;
-    padding: 11px 11px 11px 11px;
     margin: 10px 0 0 150px;
-    font-weight: bold;
-    color: white;
 }
