@@ -27,7 +27,8 @@ h1 {
     background-color: #C8C9CB;
 }
 .nav-links>a {
-
+    text-decoration: none;
+    color: #000;
 }
 .header-img {
     position: relative;
@@ -79,7 +80,13 @@ footer>p {
         margin: 0;
         margin-left: 10px;
         background-color: #ffffff;
+        text-decoration: none;
+        color: #000;
     }
+    .nav-links>a {
+        }
+
+
     .header-img {
         position: relative;
         clear: both;
