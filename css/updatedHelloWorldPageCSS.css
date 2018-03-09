@@ -3,16 +3,13 @@ body {
 
 }
 
-header {
+.header {
     background-color: #9A9F90;
-    padding-top: 15px;
-    padding-left: 15px;
-    height: 585px;
+    padding-top: 20px;
+    padding-left: 25px;
+    height: 580px;
     width: 120px;
-
-float: left;
-
-    
+    float: left;
 }
 
 .link {
@@ -24,6 +21,7 @@ float: left;
 
 .menu {
     position: absolute;
+    left: 25px;
     bottom: 390px;
     color: firebrick;
     font-weight: bold;
