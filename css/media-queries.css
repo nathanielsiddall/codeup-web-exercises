@@ -1,0 +1,53 @@
+@media screen and (min-width:768px) {
+
+    .alert-info-hidden-on-desktop {
+        visibility: hidden;
+    }
+    h1 {
+        position: relative;
+        float: left;
+    }
+    .nav-links {
+        position: relative;
+        float: right;
+        clear: right;
+    }
+    .nav-links>li {
+        list-style-type: none;
+        float: left;
+        margin: 5px;
+    }
+    .header-img {
+        position: relative;
+        clear: both;
+    }
+    .header-img>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 385px;
+        width: 890px;
+    }
+    .main {
+        float: left;
+        width: 50%;
+    }
+    .sub-section {
+        float: left;
+        width: 50%;
+    }
+    footer>p {
+        position: absolute;
+        bottom: 25px;
+        left: 10px;
+    }
+    #social-media-links {
+        position: relative;
+        float: right;
+    }
+
+
+
+
+}
+
