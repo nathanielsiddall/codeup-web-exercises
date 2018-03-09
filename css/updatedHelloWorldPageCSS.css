@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif,verdana;
+
+}
+
+header {
+    background-color: #9A9F90;
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 585px;
+    width: 120px;
+
+float: left;
+
+    
+}
+
+.link {
+    position: relative;
+    float: left;
+    padding: 10px;
+    color: #000000;
+}
+
+.menu {
+    position: absolute;
+    bottom: 390px;
+    color: firebrick;
+    font-weight: bold;
+}
+
+.body {
+    height: 585px;
+    background-color: #D3D8C9;
+    padding: 15px 0 0 150px;
+}
+
+.body>h1 {
+    color: darkgreen;
+}
+
+.content {
+    position: absolute;
+    bottom: 390px;
+    left: 400px;
+    color: firebrick;
+    font-weight: bold;
+}
