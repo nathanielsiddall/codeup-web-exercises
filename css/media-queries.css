@@ -1,3 +1,68 @@
+
+body {
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+.alert-info-hidden-on-desktop {
+    width: 100%;
+    padding: 5% 0 5% 0;
+    background-color: #D6FEFE;
+    border: 1px solid grey;
+
+}
+.alert-info-hidden-on-desktop>a {
+    margin-left: 30%;
+    text-decoration: none;
+    color: #000;
+}
+h1 {
+    text-align: center;
+
+
+}
+.nav-links {
+    text-align: center;
+    padding: 0;
+}
+
+.nav-links>li {
+    list-style-type: none;
+    margin-bottom: 2%;
+    padding: 5% 0 5% 0;
+    background-color: #C8C9CB;
+}
+.header-img {
+    position: relative;
+    clear: both;
+}
+.header-img>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 224px;
+    width: 339px;
+}
+.main {
+    width: 100%;
+}
+.sub-section {
+    width: 100%;
+}
+footer>p {
+    float: left;
+}
+#social-media-links {
+
+}
+
+.social {
+    width: 8%;
+    height: 8%;
+    position: relative;
+    float: right;
+}
+
+
+
 @media screen and (min-width:768px) {
 
     .alert-info-hidden-on-desktop {
@@ -8,14 +73,22 @@
         float: left;
     }
     .nav-links {
+        text-align: right;
+        padding: 10px;
         position: relative;
         float: right;
         clear: right;
+
+
     }
     .nav-links>li {
         list-style-type: none;
         float: left;
-        margin: 5px;
+        margin: 0;
+        margin-left: 10px;
+        background-color: #ffffff;
+
+
     }
     .header-img {
         position: relative;
@@ -48,64 +121,6 @@
 }
 
 /**********************************************************************/
-body {
-    font-family: Helvetica, Tahoma, sans-serif;
-}
-.alert-info-hidden-on-desktop {
-    width: 100%;
-    padding: 5% 0 5% 0;
-    background-color: #D6FEFE;
-    border: 1px solid grey;
 
-}
-.alert-info-hidden-on-desktop>a {
-    margin-left: 30%;
-    text-decoration: none;
-    color: #000;
-}
-h1 {
-    text-align: center;
-
-
-}
-.nav-links {
-    text-align: center;
-    padding: 0;
-    white-space: pre-line;
-
-}
-
-.nav-links>li {
-    list-style-type: none;
-    padding: 5% 0 5% 0;
-
-    background-color: #C8C9CB;
-}
-.header-img {
-    position: relative;
-    clear: both;
-}
-.header-img>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 224px;
-    width: 339px;
-}
-.main {
-    float: left;
-    width: 50%;
-}
-.sub-section {
-    float: left;
-    width: 50%;
-}
-footer>p {
-
-}
-#social-media-links {
-    position: relative;
-    float: right;
-}
 
 
