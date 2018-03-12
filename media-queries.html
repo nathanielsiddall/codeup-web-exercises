@@ -4,47 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/grid-layout.css">
 </head>
 <body>
-<a href="#main"><div class="alert-info-hidden-on-desktop">
-        Skip to main content
-    </div></a>
-    <h1>Company</h1>
-    <nav>
-        <ul class="nav-links">
-            <li>Home</li>
-           <li>Work</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-    </nav>
-    <div class="header-img">
-        <img src="img/download.jpeg" alt="">
+    <div class="first-row">
+        <div class="half-col">
+        <h1 id="h1">Company</h1>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
     </div>
-    <section id="main" class="main">
-        <h2>Main Section</h2>
-        <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at
+
+    <div class="second-row"><div class="full-col">
+        <img id="main-img" src="img/download.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="third-row"><div class="third-col">
+        <h2 class="main-section">Main Section</h2>
+        <p class="main-section">Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at
             animi commodi, iusto harum, non. Accusantium sequi consectetur
             deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae
             amet maiores sapiente in?</p>
-    </section>
-    <section class="sub-section">
-        <h2>Sub-section</h2>
-        <p>Amet optio quidem voluptatum neque esse at saepe,
-            reiciendis quaerat architecto unde minima aspernatur
-            harum cum totam non amet soluta. Ea quae odio harum
-            magni ab vitae tenetur. Itaque numquam!</p>
-    </section>
-    <footer>
-        <p>(c) 2017 All rights reserved</p>
-        <div id="social-media-links">
-            <a href="#"><img class="social" src="img/face.png" alt=""></a>
-            <a href="#"><img class="social" src="img/insta.png" alt=""></a>
-            <a href="#"><img class="social" src="img/twit.png" alt=""></a>
-
-
+    </div>
+        <div class="eighth-col">
+            <h2 class="sub-section">Sub-section</h2>
+            <p class="sub-section">Amet optio quidem voluptatum neque esse at saepe,
+                reiciendis quaerat architecto unde minima aspernatur
+                harum cum totam non amet soluta. Ea quae odio harum
+                magni ab vitae tenetur. Itaque numquam!</p>
         </div>
-    </footer>
+        </div>
+    <div class="fourth-row"><p>(c) 2017 All rights reserved</p>
+        <a href="#"><img id="social" src="img/face.png" alt=""></a>
+        <a href="#"><img id="social" src="img/insta.png" alt=""></a>
+        <a href="#"><img id="social" src="img/twit.png" alt=""></a>
+</div>
+
+
+
+
+
+<!--<a href="#main"><div class="alert-info-hidden-on-desktop">-->
+        <!--Skip to main content-->
+    <!--</div></a>-->
+    <!--<h1>Company</h1>-->
+    <!--<nav>-->
+        <!--<ul class="nav-links">-->
+            <!--<li><a href="#">Home</a></li>-->
+           <!--<li><a href="#">Work</a></li>-->
+          <!--<li><a href="#">About</a></li>-->
+          <!--<li><a href="#">Contact</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+    <!--<div class="header-img">-->
+        <!--<img src="img/download.jpeg" alt="">-->
+    <!--</div>-->
+    <!--<section id="main" class="main">-->
+        <!--<h2>Main Section</h2>-->
+        <!--<p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at-->
+            <!--animi commodi, iusto harum, non. Accusantium sequi consectetur-->
+            <!--deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae-->
+            <!--amet maiores sapiente in?</p>-->
+    <!--</section>-->
+    <!--<section class="sub-section">-->
+        <!--<h2>Sub-section</h2>-->
+        <!--<p>Amet optio quidem voluptatum neque esse at saepe,-->
+            <!--reiciendis quaerat architecto unde minima aspernatur-->
+            <!--harum cum totam non amet soluta. Ea quae odio harum-->
+            <!--magni ab vitae tenetur. Itaque numquam!</p>-->
+    <!--</section>-->
+    <!--<footer>-->
+        <!--<p>(c) 2017 All rights reserved</p>-->
+        <!--<div id="social-media-links">-->
+            <!--<a href="#"><img class="social" src="img/face.png" alt=""></a>-->
+            <!--<a href="#"><img class="social" src="img/insta.png" alt=""></a>-->
+            <!--<a href="#"><img class="social" src="img/twit.png" alt=""></a>-->
+
+
+        <!--</div>-->
+    <!--</footer>-->
 </body>
 </html>
