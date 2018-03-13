@@ -1,0 +1,16 @@
+h1 {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    background: rgba(248, 249, 250, 0.4);
+}
+
+#signup {
+    width: 25%;
+    height: 25%;
+}
+.jumbotron {
+    background-image: url("../img/pizza.png");
+
+    
+}
