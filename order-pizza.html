@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Pizza! Good for the enviroment and ok for you.</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <header>
+<!--navbar begins-->
         <div class="navbar navbar-expand-lg navbat-light bg-light flex-md-row">
             <a class="nav-link navbar-brand text-secondary float-left" href="#">Recycled Pizza</a>
             <a class="nav-link mr-2 text-secondary float-left" href="#">Order Online</a>
             <a class="nav-item mr-2 text-secondary float-left" href="#">Menu</a>
             <nav class="navbar navbar-light bg-light">
                 <form class="form-inline">
-                    <input class="form-control" type="number" placeholder="Zip Code" label="zipcode">
+                    <input class="form-control" type="number" placeholder="Zip Code">
                     <button class="btn btn-secondary" type="submit">Search stores near you!</button>
                 </form>
             </nav>
-            <a class="nav-link text-secondary justify-content-end" href="#"><img id="signup" src="img/signup.png" alt="">Sign Up</a>
+            <a class="nav-link text-secondary" href="#"><img id="signup" src="img/signup.png" alt="">Sign Up</a>
         </div>
+<!--navbar ends-->
     </header>
     <main>
         <div class="jumbotron d-none d-md-block">
             <h1 class="display-4 lead">Welcome to Pizza World!</h1>
-            </p>
         </div>
-            <h2 class="ml-4 mb-3">Build your own pizza!</h2>
+        <h2 class="ml-4 mb-3">Build your own pizza!</h2>
 <!--tablist begions-->
         <nav>
             <div class="nav nav-tabs ml-2" id="nav-tab" role="tablist">
@@ -99,9 +101,6 @@
 <!--////////crust 2 card end-->
 <!--crust section button-->
                             <a class="btn btn-primary float-right" href="#nav-cheese" role="button">Next</a>
-                            <!--<button type="button" class="btn btn-primary float-right">Next</button>-->
-                            <!--<a href="#nav-cheese" class="btn btn-primary float-right" data-toggle="tab" href="#nav-cheese" role="button" aria-controls="nav-profile" aria-selected="false">Next</a>-->
-
                         </div>
                     </div>
                 </div>
@@ -117,13 +116,13 @@
 <!--cheese amount selection begins-->
                             <div class="card-header bg-scondary">
                                 Cheese
-                            <h5 class="card-title mt-1">How Much?</h5>
-                            <select class="form-control">
-                                <option>Light</option>
-                                <option selected>Normal</option>
-                                <option>Extra</option>
-                                <option>Double</option>
-                            </select>
+                                <h5 class="card-title mt-1">How Much?</h5>
+                                <select class="form-control">
+                                    <option>Light</option>
+                                    <option selected>Normal</option>
+                                    <option>Extra</option>
+                                    <option>Double</option>
+                                </select>
                             </div>
 <!--cheese amount selection ends-->
 <!--sauce type selction begins-->
@@ -145,11 +144,9 @@
                                 </select>
 <!--sauce type selection ends--></div>
 <!--cheese&sauce tab buttons--> <div class="btn-group float-right mt-1" role="group" aria-label="Basic example">
-                                <a class="btn btn-primary " href="#nav-cheese" role="button"> &lt; Previous Step</a>
-                                <a class="btn btn-primary" href="#nav-cheese" role="button">Next Step ></a>
-                                  </div>
-
-
+                                    <a class="btn btn-primary " href="#nav-cheese" role="button"> &lt; Previous Step</a>
+                                    <a class="btn btn-primary" href="#nav-cheese" role="button">Next Step ></a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -160,108 +157,76 @@
                 <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <div class="card-header bg-primary text-white">
-                        Choose your Toppings!!!
+                        Choose your Toppings
                     </div>
-<!--toppings selections begins-->
+                    <!--******crust 1 card-->
+                    <div class="card mt-3 mb-3">
+                        <div class="card-body">
+                            <h5 class="card-header">Meats</h5>
 
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="pizzasize1"><input class="mr-1" type="checkbox" id="pizzasize1"
+                                                                   name="pizzasize" value="small">Beef</label>
+                                </li>
 
+                                <li class="list-group-item">
+                                    <label for="pizzasize2"><input class="mr-1" type="checkbox" id="pizzasize2"
+                                                                   name="pizzasize" value="medium">Ham</label>
+                                </li>
 
+                                <li class="list-group-item">
+                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
+                                                                   name="pizzasize" value="large">Philly Cheesesteak</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
+                                                                   name="pizzasize" value="large">Bacon</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--////////crust 1 card end-->
+                    <!--******crust 2 card-->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-header">Non-meats</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="pizzasize4"><input class="mr-1" type="checkbox" id="pizzasize4"
+                                                                   name="pizzasize" value="small">Green Peppers</label>
+                                </li>
 
+                                <li class="list-group-item">
+                                    <label for="pizzasize5"><input class="mr-1" type="checkbox" id="pizzasize5"
+                                                                   name="pizzasize" value="medium">Mushrooms</label>
+                                </li>
 
-                    <li class="list-group list-group-item-primary">
-
-                        <ul class="list-group-item">
-                            <label for="beef">
-                                <input class="mr-2" id="beef" type="checkbox">
-                            </label>
-
-                        <ul class="list-group-item">
-                                <label for="ham">
-                                    <input class="mr-2" id="ham" type="checkbox">
-                                </label>
-
-                        <ul class="list-group-item">
-                                <label for="philly-steak">
-                                    <input class="mr-2" id="philly-steak" type="checkbox">
-                                </label>
-
-                        <ul class="list-group-item">
-                            <label for="bacon">
-                                <input class="mr-2" id="bacon" type="checkbox">
-                            </label>
-                        </ul>
-
-                    </li>
-
+                                <li class="list-group-item">
+                                    <label for="pizzasize6"><input class="mr-1" type="checkbox" id="pizzasize6"
+                                                                   name="pizzasize" value="large">Onionsk</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
+                                                                   name="pizzasize" value="large">Jalepeno Peppers</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--////////crust 2 card end-->
+                    <!--crust section button-->
+                    <a class="btn btn-primary float-right" href="#nav-cheese" role="button">checkout</a>
                 </div>
                 </div>
-
+                </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--</div>-->
-        <!--<ul class="nav nav-tabs" id="pizza-tab" role="tablist">-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link active" id="crust" data-toggle="tab" href="#"><span class="badge badge-secondary">1</span>Size and Crust</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" id="cheese" data-toggle="tab" href="#"><span class="badge badge-secondary">2</span>Cheese and Sauce</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" id="toppings" data-toggle="tab" href="#"><span class="badge badge-secondary">3</span>Toppings</a>-->
-            <!--</li>-->
-        <!--</ul>-->
-        <!--<div class="tab-pane fade show active" id="crust" role="tabpanel" aria-labelledby="crust">-->
-            <!---->
-            <!--<div class="card" style="width: 18rem;">-->
-                <!--<div class="card-body">-->
-                    <!--<h5 class="card-title">card 1</h5>-->
-                    <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese">-->
-
-            <!--<div class="card" style="width: 18rem;">-->
-                <!--<div class="card-body">-->
-                    <!--<h5 class="card-title">card 2</h5>-->
-                    <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="sauce" role="tabpanel" aria-labelledby="toppings">-->
-
-            <!--<div class="card" style="width: 18rem;">-->
-                <!--<div class="card-body">-->
-                    <!--<h5 class="card-title">card 3</h5>-->
-                    <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-        <!--</div>-->
     </main>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
