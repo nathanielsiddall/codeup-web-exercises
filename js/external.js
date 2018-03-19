@@ -223,10 +223,17 @@ function addNumber(x, y) {
 // addNumber(x, y);
 
 
+(function(){
+
+    alert("hello")
+
+})();
 
 
+var hello = "ÆÚÒÔÓ˝alert˘¯Â´/**¨Á/         ";
 
 
+    alert(hello);
 
 
 
