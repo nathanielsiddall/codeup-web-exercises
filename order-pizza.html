@@ -10,16 +10,16 @@
 <body>
     <header>
 <!--navbar begins-->
-        <div class=" col-sm-1 col-lg-12 navbar navbar-expand-lg navbat-light bg-light flex-md-row">
+        <div class="navbar navbar-expand-lg navbat-light bg-light flex-md-row">
             <a class="nav-link navbar-brand text-secondary float-left" href="#">Recycled Pizza</a>
             <a class="nav-link mr-2 text-secondary float-left" href="#">Order Online</a>
             <a class="nav-item mr-2 text-secondary float-left" href="#">Menu</a>
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <input class="form-control" type="number" placeholder="Zip Code">
-                        <button class="btn btn-secondary" type="submit">Search stores near you!</button>
-                    </form>
-                </nav>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control" type="number" placeholder="Zip Code">
+                    <button class="btn btn-secondary" type="submit">Search stores near you!</button>
+                </form>
+            </nav>
             <a class="nav-link text-secondary" href="#"><img id="signup" src="img/signup.png" alt="">Sign Up</a>
         </div>
 <!--navbar ends-->
@@ -29,10 +29,12 @@
             <h1 class="display-4 lead">Welcome to Pizza World!</h1>
         </div>
         <h2 class="ml-4 mb-3">Build your own pizza!</h2>
-<!--tablist begins-->
+<!--tablist begions-->
         <nav>
             <div class="nav nav-tabs ml-2" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-crust" role="tab" aria-controls="nav-home" aria-selected="true">
+                <a
+                        class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-crust"
+                        role="tab" aria-controls="nav-home" aria-selected="true">
                     <span class="badge badge-secondary mr-1">1</span>Size and Crust
                 </a>
                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-cheese" role="tab" aria-controls="nav-profile" aria-selected="false">
@@ -59,17 +61,17 @@
 
                                         <ul class="list-group">
                                             <li class="list-group-item">
-                                                <label for="size-small"><input class="mr-1" type="radio" id="size-small"
+                                                <label for="pizzasize1"><input class="mr-1" type="radio" id="pizzasize1"
                                                   name="pizzasize" value="small">Small (12")</label>
                                             </li>
 
                                             <li class="list-group-item">
-                                                <label for="pizza-med"><input class="mr-1" type="radio" id="pizza-med"
+                                                <label for="pizzasize2"><input class="mr-1" type="radio" id="pizzasize2"
                                                   name="pizzasize" value="medium">Medium (18")</label>
                                             </li>
 
                                             <li class="list-group-item">
-                                                <label for="pizzasize3"><input class="mr-1" type="radio" id="size-lrg"
+                                                <label for="pizzasize3"><input class="mr-1" type="radio" id="pizzasize3"
                                                      name="pizzasize" value="large">Large (24")</label>
                                             </li>
                                         </ul>
@@ -82,17 +84,17 @@
                                     <h5 class="card-header">Thin, Crunchy Olive oiled drizzled happiness</h5>
                                         <ul class="list-group">
                                             <li class="list-group-item">
-                                                <label for="pizzasize4"> <input class="mr-1" type="radio" id="size-small2"
+                                                <label for="pizzasize4"><input class="mr-1" type="radio" id="pizzasize4"
                                                   name="pizzasize" value="small">Small (12")</label>
                                             </li>
 
                                             <li class="list-group-item">
-                                                <label for="pizzasize5"><input class="mr-1" type="radio" id="size-med2"
+                                                <label for="pizzasize5"><input class="mr-1" type="radio" id="pizzasize5"
                                                 name="pizzasize" value="medium">Medium (18")</label>
                                             </li>
 
                                             <li class="list-group-item">
-                                                <label for="pizzasize6"><input class="mr-1" type="radio" id="pizza-lrg"
+                                                <label for="pizzasize6"><input class="mr-1" type="radio" id="pizzasize6"
                                                   name="pizzasize" value="large">Large (24")</label>
                                             </li>
                                         </ul>
@@ -166,22 +168,22 @@
 
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <label for="beef"><input class="mr-1" type="checkbox" id="beef"
-                                       name="pizzasize" value="small">Beef</label>
+                                    <label for="pizzasize1"><input class="mr-1" type="checkbox" id="pizzasize1"
+                                                                   name="pizzasize" value="small">Beef</label>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <label for="ham"><input class="mr-1" type="checkbox" id="ham"
-                                       name="pizzasize" value="medium">Ham</label>
+                                    <label for="pizzasize2"><input class="mr-1" type="checkbox" id="pizzasize2"
+                                                                   name="pizzasize" value="medium">Ham</label>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="philly"
-                                       name="pizzasize" value="large">Philly Cheesesteak</label>
+                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
+                                                                   name="pizzasize" value="large">Philly Cheesesteak</label>
                                 </li>
                                 <li class="list-group-item">
-                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="bacon"
-                                       name="pizzasize" value="large">Bacon</label>
+                                    <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
+                                                                   name="pizzasize" value="large">Bacon</label>
                                 </li>
                             </ul>
                         </div>
@@ -194,21 +196,21 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <label for="pizzasize4"><input class="mr-1" type="checkbox" id="pizzasize4"
-                                       name="pizzasize" value="small">Green Peppers</label>
+                                                                   name="pizzasize" value="small">Green Peppers</label>
                                 </li>
 
                                 <li class="list-group-item">
                                     <label for="pizzasize5"><input class="mr-1" type="checkbox" id="pizzasize5"
-                                       name="pizzasize" value="medium">Mushrooms</label>
+                                                                   name="pizzasize" value="medium">Mushrooms</label>
                                 </li>
 
                                 <li class="list-group-item">
                                     <label for="pizzasize6"><input class="mr-1" type="checkbox" id="pizzasize6"
-                                       name="pizzasize" value="large">Onionsk</label>
+                                                                   name="pizzasize" value="large">Onionsk</label>
                                 </li>
                                 <li class="list-group-item">
                                     <label for="pizzasize3"><input class="mr-1" type="checkbox" id="pizzasize3"
-                                       name="pizzasize" value="large">Jalepeno Peppers</label>
+                                                                   name="pizzasize" value="large">Jalepeno Peppers</label>
                                 </li>
                             </ul>
                         </div>
@@ -223,13 +225,10 @@
             </div>
         </div>
     </main>
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-</html>git
+</html>
