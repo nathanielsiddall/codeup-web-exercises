@@ -141,9 +141,9 @@ function work() {
 
 function student() {
 
-    var classCap = false;
+    var classCap = confirm("is the class full?");
 
-    var studentSched = true;
+    var studentSched = confirm("does she have time in her scedule?");
 
     if (classCap == false && studentSched == true) {
 
@@ -158,9 +158,9 @@ function student() {
 
 
 function purchase() {
-    var purNum = 155;
-    var exp = false;
-    var prem = true;
+    var purNum = prompt("how many items have you purchased?");
+    var exp = confirm("has the deal expired?");
+    var prem = confirm("are you a premium member?");
 
         if ((purNum > 1 && exp == false) || prem && exp == false){
             alert("yes");
@@ -200,14 +200,27 @@ function login() {
 
 }
 
+function addNumber(x, y) {
+
+    var result = x+y;
+
+    alert(result);
+
+
+}
+
 
 
 color();
 movies();
 work();
 student();
-purchase()
-login()
+purchase();
+login();
+
+var x = parseInt(prompt("give me a number"));
+var y = parseInt(prompt("give me more numbers"));
+addNumber(x, y);
 
 
 
