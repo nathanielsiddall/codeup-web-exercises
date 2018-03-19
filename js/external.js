@@ -202,11 +202,11 @@ function login() {
 
 
 
-// color();
-// movies();
-// work();
-// student();
-// purchase()
+color();
+movies();
+work();
+student();
+purchase()
 login()
 
 
