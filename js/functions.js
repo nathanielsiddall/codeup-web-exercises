@@ -11,16 +11,8 @@
 
 
 function sayHello() {
-
-
     return "hello " + myName;
 }
-
-
-
-
-
-
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -67,21 +59,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
  function isTwo(random) {
-     if (random == 2){
+     if (random === 2){
          return true;
      }
-     else {
-         return false;
-     }
-
-
 }
 
 console.log(isTwo(random));
-
-console.log(random)
-
-
+console.log(random);
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -98,31 +82,20 @@ var tip;
 function calculateTip(bill) {
    var percentage = prompt("what percentage do you want to use?");
         tip = (percentage / 100 ) * bill;
-
-
-    return;
 }
 function tipcalc() {
     var bill = prompt("whats the total of your bill?");
-
     calculateTip(bill);
-
     var total = +tip + +bill;
-
     alert("the total of your bill is " + total);
-    return;
-
 }
-
-
-
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-// tipcalc();
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -138,28 +111,13 @@ function tipcalc() {
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount() {
-   var price = prompt("what is the price?")
-    var discount = prompt("what is the discount percentage")
-
+   var price = prompt("what is the price?");
+    var discount = prompt("what is the discount percentage");
     discount = (discount *.01) * price;
-   console.log(discount)
-
+    console.log(discount);
     var total = price - discount;
    alert(total)
-
-
-
 }
-
-// applyDiscount()
-
-
-
-
-
-
-
-
 
 
 
@@ -169,31 +127,19 @@ var rando = Math.floor((Math.random() * 500) + 1);
 
 
 
-
-
 function identity(a) {
     return a;
 }
 
-
-
-
-
 function isOdd() {
-
     console.log(rando);
-
     if (rando % 2 === 1) {
-
         console.log("is odd")
     }
-
     else {
         console.log("not odd")
     }
-
 }
-
 
 function isEven() {
 
@@ -211,9 +157,9 @@ function decrement() {
 }
 
 function hasSpaces() {
-    var data = prompt("give me words")
-    var space = data.indexOf(" ")
-    console.log(space)
+    var data = prompt("give me words");
+    var space = data.indexOf(" ");
+    console.log(space);
     if (space > -1) {
         alert("theses words have a space")
     } else {
@@ -222,8 +168,9 @@ function hasSpaces() {
 }
 
 function isFive() {
-    var five = rando === 5;
-    alert("the number is equal to 5")
+    if (rando === 5){
+        alert("the number is equal to 5")
+    }
 }
 
 function square() {
@@ -251,15 +198,15 @@ function double() {
 }
 
 
-
-
-// identity(a);
-// isOdd();
-// isEven();
-// decrement()
-// hasSpaces()
-// isFive();
-// square()
-// cube();
-// half();
-double()
+tipcalc();
+applyDiscount();
+identity(a);
+isOdd();
+isEven();
+decrement();
+hasSpaces();
+isFive();
+square();
+cube();
+half();
+double();
