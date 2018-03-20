@@ -99,6 +99,7 @@ function calculateTip(bill) {
    var percentage = prompt("what percentage do you want to use?");
         tip = (percentage / 100 ) * bill;
 
+
     return;
 }
 function tipcalc() {
@@ -106,14 +107,14 @@ function tipcalc() {
 
     calculateTip(bill);
 
-    var total = tip + bill;
+    var total = +tip + +bill;
 
     alert("the total of your bill is " + total);
     return;
 
 }
 
-tipcalc();
+
 
 /**
  * TODO:
@@ -121,7 +122,7 @@ tipcalc();
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-
+// tipcalc();
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -136,3 +137,129 @@ tipcalc();
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount() {
+   var price = prompt("what is the price?")
+    var discount = prompt("what is the discount percentage")
+
+    discount = (discount *.01) * price;
+   console.log(discount)
+
+    var total = price - discount;
+   alert(total)
+
+
+
+}
+
+// applyDiscount()
+
+
+
+
+
+
+
+
+
+
+
+
+var a = "this is a thing...";
+var rando = Math.floor((Math.random() * 500) + 1);
+
+
+
+
+
+function identity(a) {
+    return a;
+}
+
+
+
+
+
+function isOdd() {
+
+    console.log(rando);
+
+    if (rando % 2 === 1) {
+
+        console.log("is odd")
+    }
+
+    else {
+        console.log("not odd")
+    }
+
+}
+
+
+function isEven() {
+
+    if (rando % 2 === 0){
+        console.log("is even")
+    }
+    else{
+        console.log("not even")
+    }
+}
+
+function decrement() {
+  var dec = -- rando;
+  console.log (dec);
+}
+
+function hasSpaces() {
+    var data = prompt("give me words")
+    var space = data.indexOf(" ")
+    console.log(space)
+    if (space > -1) {
+        alert("theses words have a space")
+    } else {
+        alert("these words ain't got no space")
+    }
+}
+
+function isFive() {
+    var five = rando === 5;
+    alert("the number is equal to 5")
+}
+
+function square() {
+    console.log(rando);
+    var squared = rando * rando;
+    console.log("the square of the random number is " + squared)
+}
+
+function cube() {
+    console.log(rando);
+    var cubed = rando * rando * rando;
+    console.log("the cubed of the number is " + cubed)
+}
+
+function half() {
+    console.log(rando);
+    var halved = rando / 2;
+    console.log(" half of the number is " + halved)
+}
+
+function double() {
+    console.log(rando);
+    var doubled = rando * 2;
+    console.log("the double of the number is " + doubled)
+}
+
+
+
+
+// identity(a);
+// isOdd();
+// isEven();
+// decrement()
+// hasSpaces()
+// isFive();
+// square()
+// cube();
+// half();
+double()
