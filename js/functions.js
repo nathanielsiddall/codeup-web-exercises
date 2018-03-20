@@ -197,18 +197,24 @@ function double() {
     console.log("the double of the number is " + doubled)
 }
 
+function crazy() {
+   var message = isEven(rando) ? "the number is even" : "the number is odd";
+    alert(message);
+}
 
 
-tipcalc();
-applyDiscount();
-identity(a);
-isOdd();
-isEven();
-decrement();
-hasSpaces();
-isFive();
-square();
-cube();
-half();
-double();
+// tipcalc();
+// applyDiscount();
+// identity(a);
+// isOdd();
+// isEven();
+// decrement();
+// hasSpaces();
+// isFive();
+// square();
+// cube();
+// half();
+// double();
+
+crazy();
 
