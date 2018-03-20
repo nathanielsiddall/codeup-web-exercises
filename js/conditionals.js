@@ -73,18 +73,45 @@ function numState() {
 
 function analyzeColor() {
 
-    if (color === "blue"){
-        alert("blue is the color of the sky")
+
+
+    switch (color) {
+
+        case "red":
+            alert("red is the color of strawberries");
+            break;
+        case "blue":
+            alert("blue is the color of the sky");
+            break;
+        case "orange":
+            alert("orange is the color of an orange");
+            break;
+        case "yellow":
+            alert("yellow is the color of the sun");
+            break;
+        case "green":
+            alert("green is the color of the grass");
+            break;
+        case "indigo":
+            alert("indigo is the color that scottish raiders would paint their" +
+                " faces before the went and slaughtered englishmen");
+            break;
+        default:
+            alert("I have no idea what color that is.");
+            break;
     }
-        else if (color === "red"){
-            alert("red is the color of strwberries")
-        }
-        else {
-            alert("idk what that color is")
-        }
+
+    // if (randomColor === "blue"){
+    //     alert("blue is the color of the sky")
+    // }
+    //     else if (randomColor === "red"){
+    //         alert("red is the color of strwberries")
+    //     }
+    //     else {
+    //         alert("idk what that color is")
+    //     }
 }
-var color =  prompt("gimme a color")
-analyzeColor(color);
+
 
 
 
@@ -112,6 +139,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+// var color =  prompt("gimme a color");
+
 
 /* ########################################################################## */
 
@@ -134,7 +163,37 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal() {
+    // var luck = prompt("what is you lucky number")
+    var luck;
 
+    switch (luckyNumber) {
+        case 1:
+            luck = .10;
+            break;
+        case 2:
+            luck = .25;
+            break;
+        case 3:
+            luck = .35;
+            break;
+        case 4:
+            luck = .5;
+            break;
+        case 5:
+            luck = 1;
+            break;
+        default:
+            alert("thats not a lucky number ya dingus.");
+            break;
+    }
+    var amount = prompt("whats your total?");
+    var  discount =  amount * luck;
+    var total  = amount - discount;
+
+    alert("your total is " + total);
+
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -143,9 +202,12 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+console.log(luckyNumber);
 
 
 
 
-// numState();
+numState();
+analyzeColor(color);
+calculateTotal(luckyNumber);
