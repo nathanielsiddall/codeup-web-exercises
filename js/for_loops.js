@@ -48,7 +48,7 @@ function decrement() {
         console.log(i);
     }
 }
-
+// k
 
 howMultiplicationTable(1);
 evenOdd();
