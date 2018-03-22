@@ -5,7 +5,7 @@
 function showMultiplicationTable(x) {
 
     if (x === 0 ){
-        return;
+        return console.log("you can't divide by zero");
     }
 
     for (i = 1; i <= 10; i++)
@@ -30,16 +30,17 @@ function evenOdd() {
         var rando = Math.floor((Math.random() * 5000) + 1);
 
         console.log(rando + isEven(rando))
+        return rando;
     }
 }
 
-function numberTriangle() {
+function numberTriangle(x) {
 
     var num = " ";
 
-    for (i = 1; i <= 9; i++) {
+    for (i = 1; i <= x; i++) {
         num = num + i;
-        console.log(num);
+        console.log(parseInt(num));
     }
 }
 
@@ -48,11 +49,38 @@ function decrement() {
         console.log(i);
     }
 }
-// k
 
-howMultiplicationTable(1);
-evenOdd();
-numberTriangle();
-decrement();
+
+function fibonacci() {
+
+    var a = 0;
+    var b = 0;
+    var c = 1;
+
+    for (var i = 1; i <= 20; i++) {
+        a = b + c;
+        console.log(a);
+        c = b;
+        b = a;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// showMultiplicationTable(5);
+// evenOdd();
+// numberTriangle(evenOdd());
+// decrement();
+fibonacci()
 
 
