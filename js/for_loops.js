@@ -66,6 +66,61 @@ function fibonacci() {
     }
 }
 
+function bottle() {
+
+
+    for (var i = 9999; i > 1; i--){
+
+        x = i - 1;
+
+      document.write( i + " bottles of beer on the wall " + i +
+            " bottles of beer. take one down pass it around, " + x +
+            " bottles of beer on the wall <br> <br> " );
+    }
+
+}
+
+function isMultiple(x, y){
+
+    if (x % y === 0){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function fizzBuzz() {
+
+    for (var i = 1; i < 100; i++){
+
+        if (isMultiple(i, 3) === true && isMultiple(i, 5) === true){
+            console.log("fizz Buzz");
+
+        }
+            else if (isMultiple(i, 3) === true) {
+               console.log("fizz");
+            }
+
+            else if (isMultiple(i, 5) === true){
+                    console.log("buzz");
+            }
+                else {
+                    console.log(i);
+                }
+    }
+}
+
+function integerSum(x){
+    var x = 1;
+
+    for(var i = 0; i <= x; i++){
+
+        x = x + i;
+        console.log("Current integer value: " + x);
+
+
+    }
+}
 
 
 
@@ -77,10 +132,13 @@ function fibonacci() {
 
 
 
-// showMultiplicationTable(5);
+
+// showMultiplicationTable(3);
 // evenOdd();
 // numberTriangle(evenOdd());
 // decrement();
-fibonacci()
-
+// fibonacci();
+// bottle();
+// fizzBuzz();
+integerSum(500);
 
