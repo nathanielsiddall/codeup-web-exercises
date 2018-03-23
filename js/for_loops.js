@@ -50,7 +50,6 @@ function decrement() {
     }
 }
 
-
 function fibonacci() {
 
     var a = 0;
@@ -126,24 +125,19 @@ function isHex(x) {
 
     x.split("(?!^)");
 
-    for (var i = 0; i < arrLength; i++){
+    for (var i = 0; i <= arrLength; i++){
 
         var num = hexID + x[i];
 
         num = isNaN(num);
 
-
-        if (num === true){
-            return false;
-        } else if (i === arrLength) {
+        if (i === arrLength){
             return true;
         }
+        if (num === true){
+            return false;
+        }
     }
-
-
-
-
-
 }
 
 
@@ -156,5 +150,5 @@ function isHex(x) {
 // bottle();
 // fizzBuzz();
 //console.log("the sum of the integers are: " + integerSum(500));
-console.log(isHex("234efa"));
+console.log(isHex("abcdgef"));
 
