@@ -121,26 +121,29 @@ function integerSum(y){
 
 function isHex(x) {
 
+    var arrLength = x.length;
+    var hexID = "0x";
+
     x.split("(?!^)");
 
-    var arrLength = x.length;
+    for (var i = 0; i < arrLength; i++){
+
+        var num = hexID + x[i];
+
+        num = isNaN(num);
+
+
+        if (num === true){
+            return false;
+        } else if (i === arrLength) {
+            return true;
+        }
+    }
 
 
 
 
-    console.log(arrLength);
 
-    // for (var i = 0; i = 10; i++){
-    //
-    //     console.log(x[i]);
-    // }
-
-
-
-    // var hexID = "0x";
-    //         var num = hexID + x;
-    //        num = parseInt(num);
-    //         console.log(num);
 }
 
 
@@ -153,5 +156,5 @@ function isHex(x) {
 // bottle();
 // fizzBuzz();
 //console.log("the sum of the integers are: " + integerSum(500));
-// isHex("234ggg");
+console.log(isHex("234efa"));
 
