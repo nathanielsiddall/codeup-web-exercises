@@ -123,7 +123,9 @@ function isHex(x) {
     var arrLength = x.length;
     var hexID = "0x";
 
-    x.split("(?!^)");
+    console.log(x.split("(?!^)"));
+
+    console.log(x);
 
     for (var i = 0; i <= arrLength; i++){
 
@@ -142,13 +144,13 @@ function isHex(x) {
 
 
 
-showMultiplicationTable(1);
-evenOdd();
-numberTriangle(10);
-decrement();
-fibonacci();
-bottle();
-fizzBuzz();
-console.log("the sum of the integers are: " + integerSum(500));
+// showMultiplicationTable(1);
+// evenOdd();
+// numberTriangle(10);
+// decrement();
+// fibonacci();
+// bottle();
+// fizzBuzz();
+// console.log("the sum of the integers are: " + integerSum(500));
 console.log(isHex("abcdgef"));
 
