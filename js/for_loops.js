@@ -110,26 +110,14 @@ function fizzBuzz() {
     }
 }
 
-function integerSum(x){
+function integerSum(y){
     var x = 1;
-
-    for(var i = 0; i <= x; i++){
+    for(var i = 0; i <= y; i++){
 
         x = x + i;
         console.log("Current integer value: " + x);
-
-
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
