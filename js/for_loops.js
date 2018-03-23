@@ -115,18 +115,43 @@ function integerSum(y){
     for(var i = 0; i <= y; i++){
 
         x = x + i;
-        console.log("Current integer value: " + x);
     }
+    return x;
+}
+
+function isHex(x) {
+
+    x.split("(?!^)");
+
+    var arrLength = x.length;
+
+
+
+
+    console.log(arrLength);
+
+    // for (var i = 0; i = 10; i++){
+    //
+    //     console.log(x[i]);
+    // }
+
+
+
+    // var hexID = "0x";
+    //         var num = hexID + x;
+    //        num = parseInt(num);
+    //         console.log(num);
 }
 
 
 
-// showMultiplicationTable(3);
+//showMultiplicationTable(1);
 // evenOdd();
 // numberTriangle(evenOdd());
 // decrement();
 // fibonacci();
 // bottle();
 // fizzBuzz();
-integerSum(500);
+//console.log("the sum of the integers are: " + integerSum(500));
+// isHex("234ggg");
 
