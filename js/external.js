@@ -211,16 +211,16 @@ function addNumber(x, y) {
 
 
 
-// color();
-// movies();
-// work();
-// student();
-// purchase();
-// login();
-//
-// var x = parseInt(prompt("give me a number"));
-// var y = parseInt(prompt("give me more numbers"));
-// addNumber(x, y);
+color();
+movies();
+work();
+student();
+purchase();
+login();
+
+var x = parseInt(prompt("give me a number"));
+var y = parseInt(prompt("give me more numbers"));
+addNumber(x, y);
 
 
 (function(){

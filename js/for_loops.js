@@ -38,7 +38,7 @@ function numberTriangle(x) {
 
     var num = " ";
 
-    for (i = 1; i <= x; i++) {
+    for (var i = 1; i <= x; i++) {
         num = num + i;
         console.log(parseInt(num));
     }
@@ -142,13 +142,13 @@ function isHex(x) {
 
 
 
-//showMultiplicationTable(1);
-// evenOdd();
-// numberTriangle(evenOdd());
-// decrement();
-// fibonacci();
-// bottle();
-// fizzBuzz();
-//console.log("the sum of the integers are: " + integerSum(500));
+showMultiplicationTable(1);
+evenOdd();
+numberTriangle(10);
+decrement();
+fibonacci();
+bottle();
+fizzBuzz();
+console.log("the sum of the integers are: " + integerSum(500));
 console.log(isHex("abcdgef"));
 

@@ -203,18 +203,18 @@ function crazy() {
 }
 
 
-// tipcalc();
-// applyDiscount();
-// identity(a);
-// isOdd();
-// isEven();
-// decrement();
-// hasSpaces();
-// isFive();
-// square();
-// cube();
-// half();
-// double();
+tipcalc();
+applyDiscount();
+identity(a);
+isOdd();
+isEven();
+decrement();
+hasSpaces();
+isFive();
+square();
+cube();
+half();
+double();
 
 crazy();
 
