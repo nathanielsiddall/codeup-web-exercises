@@ -1,6 +1,9 @@
 
 
+function f(x, y) {
+    function x() {y}
 
+}
 
 
 
@@ -16,29 +19,39 @@ function p(x) {
 function colo(x) {
    return console.log(x);
 }   /*Shortens the names required for console.logs*/
+function doc(x) {
+    document.write(x);
 
-var userNum = p("gimme an odd number between 1 and 50");
-var i = 1;
+} /*Shortens the names required for document.write*/
 
-userNum = parseInt(userNum);
+function odd() {
 
-if  (userNum >= 50) {
-    a(" i said under 50.");
-}   else if (userNum % 2 === 0){
-    a("i said odd");
+    var userNum = p("gimme an odd number between 1 and 50");
+    var i = 1;
+
+    userNum = parseInt(userNum);
+
+    if  (userNum >= 50) {
+        a(" i said under 50.");
+    }   else if (userNum % 2 === 0){
+        a("i said odd");
+    }
+
+
+    while (i <= 50) {
+
+        if (i % 2 === 1)
+            if (userNum === i){
+                doc("yikes! skipping number: " + userNum + "\n \r" )
+            }
+                else {
+                 doc("heres an odd number: " + i + "\n \r")
+                }
+            i++;
+    }
 }
 
 
-while (i <= 50) {
 
-    if (i % 2 == 1)
-        if (userNum == i){
-        colo("yikes! skipping number: " + userNum)
-        } else {
-        colo("heres an odd number:" + i)
-        }
-
-        i++;
-}
-
+odd();
 
