@@ -25,16 +25,12 @@
      * string, and <li> tags around each planet.
      */
 
-    var ul = "<ul>";
-    var eul = "</ul>";
-    var li = "<li>";
-    var eli = "</li>";
 
-    planetsString = planetsArray.join("<br>");
+    planetsString = planetsArray.join("<li>");
     console.log(planetsString);
 
 
 
-    document.write( "<ul>" + "<li>" + planetsString + </ul>");
+    document.write( "<ul>" + "<li>" + planetsString  + "</ul>");
 
 })();
