@@ -6,7 +6,7 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-var names = ['andy', 'bob', 'charles', 'dan']
+var names = ['andy', 'bob', 'charles', 'dan'];
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
@@ -49,7 +49,7 @@ for (var i = 0; i < arrLength; i++){
 names.forEach(function (names) {
 
     console.log(names)
-})
+});
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -82,6 +82,7 @@ names.forEach(function (names) {
     console.log(firstItem(names));
     console.log(secondItem(names));
     console.log(lastItem(names));
+
 
 
 
