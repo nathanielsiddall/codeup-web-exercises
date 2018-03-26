@@ -61,13 +61,14 @@ var person = {};
             if(shopper.amount > 200) {
 
 
-               // var total = amount;
+                    var total = shopper.amount;
                     var discountAmount = shopper.amount * .88;
+
                     shopper.amount = shopper.amount  - discountAmount;
 
-                // amount = amount * .88;
-
-                console.log(shopper.name + " your total is " +discountAmount);
+                console.log(shopper.name + " your total is " + total + " However with your discount your total is " + discountAmount);
+            } else {
+                console.log(shopper.name + " your total is" + shopper.amount);
             }
 
         });
