@@ -93,7 +93,14 @@ var person = {};
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    var books = [
+        {title: "The Fellowship of the Ring", author: "J.R.R. Tolkien" },
+        {title: "those two towers tho", author:"ya boy jr" },
+        {title:"Big A's back in town", author:"a guy who has forgotten more english than you'll know"},
+        {title:"the Silmarillion, or how we just can't stop fucking everything up" ,author:"holy cow this guy can write some dense stuff" },
+        {title:"yeah lets go piss off a dragon, i'm sure thats not going to go wrong" ,author:"Holy cow this guy's got a back story for his back stories." },
 
+    ];
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -119,6 +126,14 @@ var person = {};
      *      ...
      */
 
+
+
+    for (var i = 0; i < books.length; i++){
+
+       var x = i + 1;
+
+       document.write("book #  " + x + "<br>" + books[i].title + "<br>" + books[i].author + "<br>---<br>");
+    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -130,4 +145,10 @@ var person = {};
      *   `showBookInfo` function.
      */
 
+    function createbook() {
+        
+    }
+    
+    
+    
 })();
