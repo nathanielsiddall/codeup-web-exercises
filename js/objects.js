@@ -98,7 +98,7 @@ var person = {};
         {title: "those two towers tho", author:"ya boy jr" },
         {title:"Big A's back in town", author:"a guy who has forgotten more english than you'll know"},
         {title:"the Silmarillion, or how we just can't stop fucking everything up" ,author:"holy cow this guy can write some dense stuff" },
-        {title:"yeah lets go piss off a dragon, i'm sure thats not going to go wrong" ,author:"Holy cow this guy's got a back story for his back stories." },
+        {title:"yeah lets go piss off a dragon, i'm sure thats not going to go wrong" ,author:"Holy cow this guy's got a back story for his back stories." }
 
     ];
     /**
@@ -128,12 +128,16 @@ var person = {};
 
 
 
-    for (var i = 0; i < books.length; i++){
 
-       var x = i + 1;
+    function showBookInfo() {
 
-       document.write("book #  " + x + "<br>" + books[i].title + "<br>" + books[i].author + "<br>---<br>");
+        for (var i = 0; i < books.length; i++) {
+            var x = i + 1;
+
+            document.write("book #  " + x + "<br>" + books[i].title + "<br>" + books[i].author + "<br>---<br>");
+        }
     }
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -145,10 +149,17 @@ var person = {};
      *   `showBookInfo` function.
      */
 
-    function createbook() {
-        
+    function createBook() {
+       var bookTitle =  prompt("gimme me a title of a book");
+        var authorName = prompt("whats the authors name");
+
+        var bookObj = {title: bookTitle, author: authorName};
+
+        books.push(bookObj);
     }
     
-    
+    createBook();
+    showBookInfo();
+
     
 })();
