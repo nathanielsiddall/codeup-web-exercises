@@ -34,7 +34,6 @@
 // *****document.write(getArea(prompt("gimme a number")));
 
         logInfo: function (doRounding) {
-            // TODO: complete this method.
 
             if (doRounding === true){
                console.log(Math.round(circle.getArea()/* + " " + circle.getDiameter()*/));
@@ -56,7 +55,6 @@
     circle.logInfo(true);
 
     console.log("=======================================================");
-    // TODO: Change the radius of the circle to 5.
 
     circle.radius = 5,
 
