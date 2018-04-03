@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        #map-canvas {
+            height: 915px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <div id="map-canvas"></div>
 
-<script src="https:/maps.googleapis.com/map/api/js?key=AIzaSyBDKeXHrJqcUx1O88yhJ4oJcRcc_ue4lPg"></script>
-<script src="js/google-api"></script>
+
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDKeXHrJqcUx1O88yhJ4oJcRcc_ue4lPg&callback=initMap">
+</script>
+
+<script src="js/google-api.js"></script>
 
 </body>
 </html>

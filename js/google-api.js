@@ -2,16 +2,24 @@
 
 (function () {
 
+    var loc = { lat: 29.429447, lng: -98.491623 };
 var mapOptions = {
-
-    zoom:19,
-
-    center: {
-        lat:29.426791,
-        lng: -98.489602
-    }
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    zoom:15,
+    center: loc
 };
 
-var map = new googgle.maps.map(document.getElementById("map-canvas"), mapOptions);
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: loc,
+        map: map
+    });
+
+    var infoWindow = new google.maps.InfoWindow({
+        content: "your face is dumb and your code is too."
+    });
+
+    infoWindow.open(map, marker);
 
 })();
