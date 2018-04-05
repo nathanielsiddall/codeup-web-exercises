@@ -13,11 +13,12 @@
         <div>
         this is a paragraph
          </div>
+    <button id="btn">this  is a button</button>
 
         <ul>
-            <li>this is a list item</li>
-            <li>this is also a list item</li>
-            <li>and this is another list item</li>
+            <li id="li1">this is a list item</li>
+            <li id="li2">this is also a list item</li>
+            <li id="li3">and this is another list item</li>
         </ul>
     </p>
 
@@ -26,7 +27,13 @@
 
     $(document).ready(function () {
         $("h1") .text("the Dom has finished loading")
-    })
+    });
+
+    $("#btn").click(function () {
+        $("#li1") .text("i need a nap")
+    } )
 </script>
 </body>
 </html>
+
+
