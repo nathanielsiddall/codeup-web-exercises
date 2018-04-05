@@ -16,28 +16,16 @@
     <button id="btn">this  is a button</button>
 
         <ul>
-            <li id="li1">this is a list item</li>
-            <li id="li2">this is also a list item</li>
-            <li id="li3">and this is another list item</li>
+            <li class="codeup">this is a list item</li>
+            <li class="codeup">this is also a list item</li>
+            <li class="codeup">and this is another list item</li>
         </ul>
     </p>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
+    $(".codeup").css("border", "1px solid red");
 
-    $(document).ready(function () {
-        $("h1") .text("the Dom has finished loading")
-    });
-
-    var btnclick  = $("#btn").click(function () {
-
-        $("#li1") .text("i need a nap")
-        if (btnclick){
-
-
-        ("#para").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
-        }
-    } )
 </script>
 </body>
 </html>
