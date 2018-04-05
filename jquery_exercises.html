@@ -9,18 +9,21 @@
     <h1>
         this is an header
     </h1>
-
     <p>
+
         <ul>
-        <li>this is a list item</li>
-        <li>this is also a list item</li>
-        <li>and this is another list item</li>
-    </ul>
+            <li>this is a list item</li>
+            <li>this is also a list item</li>
+            <li>and this is another list item</li>
+        </ul>
     </p>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
 
+    $(document).ready(function () {
+        $("p") .text("the Dom has finished loading")
+    })
 </script>
 </body>
 </html>
