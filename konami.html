@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="d">
+    
+</div>
+
+<audio id="sound" src="aud/Interference.mp3" type="audio/mpeg"></audio>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    var thing = "";
+    var athing = "";
+    $(document).keyup(function () {
+        thing = (event.keyCode.toString());
+        athing += thing;
+        if (thing === "8"){
+            athing = "";
+        }
+        $("body").text(athing);
+        // var noise = document.getElementById("sound");
+
+
+
+        if(athing ==="3838404037393739666513" || athing === "13"){
+    $("#sound").trigger('play');
+            alert("You Have Added 30 lives");
+
+
+
+
+
+
+            
+        }
+    })
+</script>
+</body>
+</html>
