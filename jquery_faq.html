@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invisible {
+            display: none;
+            text-align: center;
+            width: 90%;
+        }
+        .dt {
+
+            font-family: "Al Tarikh" , sans-serif;
+            padding: 3px;
+            margin: 10px;
+            background-color: #696969;
+            border-radius: 10px;
+            text-align: center;
+            color: beige;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt class="dt" id="dt1"> Back In The Day:</dt>
+        <dd class="invisible" id="dd1"> The U.S. National Park Service, the bureau responsible for protecting our parks, was founded in 1916 when President Woodrow Wilson signed the Organic Act. However, the first national park was created many years earlier, when Congress passed an act establishing Yellowstone National Park in 1872.</dd>
+        <dt class="dt" id="dt2">Numbers Don’t Lie:</dt>
+        <dd class="invisible">  Today there are 408 parks covering 84 million acres (roughly the size of Germany). These parks contain at least 247 species of threatened or endangered plants and animals, more than 75,000 archeological sites and 18,000 miles of trails.
+        </dd>
+        <dt class="dt" id="dt3">The Favorite Child:</dt>
+        <dd class="invisible"> Great Smoky Mountains is the most visited national park, drawing more than 10 million recreational visits each year.</dd>
+        <dt class="dt" id="dt4">The Deep Blue Sea:</dt>
+        <dd class="invisible"> Crater Lake National Park is home to America’s deepest lake. Crater Lake is 1,943 feet deep, enough to hide 1.5 Empire State Buildings, and holds 4.6 trillion gallons of water.</dd>
+        <dt class="dt" id="dt5">Liar, Liar:</dt>
+        <dd class="invisible"> Crater Lake was not actually formed by a crater falling from the sky. On the contrary, it lies in a volcanic basin and was formed when Mount Mazama collapsed following a large eruption.</dd>
+        <dt class="dt" id="dt6">Things That Go Boom:</dt>
+        <dd class="invisible"> North America’s largest supervolcano is located in Yellowstone National Par</dd>
+        <dt class="dt" id="dt7">Brave the Caves:</dt>
+        <dd class="invisible"> Mammoth Cave National Park is the longest cave system known to the world, with more than 400 mapped miles of caves</dd>
+        <dt class="dt" id="dt8">Think Big:</dt>
+        <dd class="invisible"> Located in Alaska, Wrangell-St. Elias is the largest park in the country. At six times the size of Yellowstone, it is the meeting point of four major mountain ranges and contains three climate zones (everything from giant glaciers to wetlands and volcanoes).
+        </dd>
+        <dt class="dt" id="dt9">The Low Point:</dt>
+        <dd class="invisible"> The lowest point in the Western Hemisphere, Badwater Basin in Death Valley National Park, is 282 ft. below sea level.</dd>
+        <dt class="dt" id="dt0">End on a High Note:</dt>
+        <dd class="invisible">  The highest point in North America is Mt. McKinley in Denali National Park, which stands at 20,320 feet tall.</dd>
+    </dl>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        var isclick = true;
+        $(".dt").click(function () {
+            if(isclick){
+                $(".invisible").css("display", "inline-block");
+                isclick = false;
+            }
+            else {
+                $(".invisible").css("display", "none");
+                isclick = true;
+            }
+        })
+    </script>
+</body>
+</html>
