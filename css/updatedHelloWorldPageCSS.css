@@ -4,37 +4,30 @@ body {
     display: flex;
     justify-content: space-evenly
 }
-
 .wrapper {
     display: flex;
     width: 95%;
     align-items: stretch;
-
 }
-
 .wrapperPart{
     box-sizing: border-box;
     width: 100%;
 }
-
 .header {
     background-color: black;
     color: white;
     height: 100%;
+    min-width: ;
     display: flex;
     flex-direction: column;
 }
-
 .nav-bar {
     align-items: stretch;
-    /*flex-grow: 1;*/
     flex-flow: nowrap;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     width: 100%;
 }
-
 .header a {
     color: white;
     text-decoration: none;
@@ -42,91 +35,13 @@ body {
     padding: 10px;
 
 }
-
-/*.body {*/
-    /*display: flex;*/
-    /*margin: auto;*/
-/*}*/
-/*.row {*/
-
-/*display: flex;*/
-/*}*/
-
-/*.logo {*/
-/*flex: 1;*/
-/*margin-left: 10%;*/
-/*}*/
-
-/*.col-1 {*/
-/*flex: 2;*/
-/*}*/
-
-/*.col-2 {*/
-/*flex: 1;*/
-/*}*/
-
-/*#hr {*/
-/*width: 90%*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*body {*/
-    /*font-family: 'Trebuchet MS' ,verdana, sans-serif;*/
-    /*width: 90%;*/
-    /*display: flex;*/
-    /*justify-content: space-evenly*/
-/*}*/
-
-/*.wrapper {*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-
-/*}*/
-
-/*.header {*/
-    /*background-color: #9A9F90;*/
-    /*height: 580px;*/
-    /*flex-grow: 1;*/
-    /*border-radius: 25px;*/
-
-/*}*/
-
-/*.link {*/
-    /*position: relative;*/
-    /*float: left;*/
-    /*padding: 10px;*/
-    /*color: #000000;*/
-/*}*/
-
 .menu {
-
-    /*left: 25px;*/
-    /*bottom: 390px;*/
     color: firebrick;
     font-weight: bold;
-    /*vertical-align: bottom;*/
-
 }
-
-/*.wrapperPart {*/
-    /*width: 100%;*/
-    /*box-sizing: border-box;*/
-/*}*/
-
-/*.body {*/
-    /*margin: auto;*/
-/*}*/
-
+.body {
+    margin-left: 5%;
+}
 .body h1 {
     color: darkgreen;
 }
@@ -139,12 +54,23 @@ body {
 .row {
     display: flex;
 }
+
+#a {
+    text-decoration: none;
+}
 .logo {
     flex: 1;
     margin-left: 10%;
-}
 
+}
 #hr {
     width: 90%
+}
 
+#col-1 {
+    flex: 2;
+}
+
+#col-2 {
+    flex: 1;
 }
