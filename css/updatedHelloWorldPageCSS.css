@@ -1,46 +1,123 @@
-body {
-    font-family: 'Trebuchet MS' ,verdana, sans-serif;
 
+
+.wrapper {
+    display: flex;
+    width: 95%;
+    align-items: stretch;
+
+}
+
+.wrapperPart{
+    box-sizing: border-box;
+    width: 90%;
 }
 
 .header {
-    background-color: #9A9F90;
-    padding-top: 20px;
-    padding-left: 25px;
-    height: 580px;
-    width: 120px;
-    float: left;
+    background-color: black;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.link {
-    position: relative;
-    float: left;
-    padding: 10px;
-    color: #000000;
+.header a {
+    color: white;
+    text-decoration: none;
+
+
 }
 
-.menu {
-    position: absolute;
-    left: 25px;
-    bottom: 390px;
-    color: firebrick;
-    font-weight: bold;
-}
 
-.body {
-    height: 585px;
-    background-color: #D3D8C9;
-    padding: 15px 0 0 150px;
-}
 
-.body>h1 {
-    color: darkgreen;
-}
 
-.content {
-    position: absolute;
-    bottom: 390px;
-    left: 400px;
-    color: firebrick;
-    font-weight: bold;
-}
+
+
+
+
+
+
+
+
+/*body {*/
+    /*font-family: 'Trebuchet MS' ,verdana, sans-serif;*/
+    /*width: 90%;*/
+    /*display: flex;*/
+    /*justify-content: space-evenly*/
+/*}*/
+
+/*.wrapper {*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+
+/*}*/
+
+/*.header {*/
+    /*background-color: #9A9F90;*/
+    /*height: 580px;*/
+    /*flex-grow: 1;*/
+    /*border-radius: 25px;*/
+
+/*}*/
+
+/*.link {*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*padding: 10px;*/
+    /*color: #000000;*/
+/*}*/
+
+/*.menu {*/
+
+    /*left: 25px;*/
+    /*bottom: 390px;*/
+    /*color: firebrick;*/
+    /*font-weight: bold;*/
+    /*vertical-align: bottom;*/
+
+/*}*/
+
+/*.wrapperPart {*/
+    /*width: 100%;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*.body {*/
+    /*margin: auto;*/
+/*}*/
+
+/*.body>h1 {*/
+    /*color: darkgreen;*/
+/*}*/
+
+/*.content {*/
+    /*position: absolute;*/
+    /*bottom: 390px;*/
+    /*left: 400px;*/
+    /*color: firebrick;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.row {*/
+
+    /*display: flex;*/
+/*}*/
+
+/*.logo {*/
+/*flex: 1;*/
+    /*margin-left: 10%;*/
+/*}*/
+
+/*.col-1 {*/
+    /*flex: 2;*/
+/*}*/
+
+/*.col-2 {*/
+    /*flex: 1;*/
+/*}*/
+
+/*#hr {*/
+    /*width: 90%*/
+
+/*}*/
