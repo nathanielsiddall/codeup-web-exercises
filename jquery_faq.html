@@ -18,14 +18,22 @@
             border-radius: 10px;
             text-align: center;
             color: beige;
-
-
         }
+        #button {
+            height: 30px;
+            width: 250px;
+        }
+
 
 
     </style>
 </head>
 <body>
+
+<div id="news">
+    <h1>Would You like to sign up for our news letter?</h1>
+    <div><p id="x">x</p></div>
+</div>
     <dl>
         <dt class="dt" id="dt1"> Back In The Day:</dt>
         <dd class="invisible" id="dd1"> The U.S. National Park Service, the bureau responsible for protecting our parks, was founded in 1916 when President Woodrow Wilson signed the Organic Act. However, the first national park was created many years earlier, when Congress passed an act establishing Yellowstone National Park in 1872.</dd>
@@ -50,20 +58,70 @@
         <dt class="dt" id="dt0">End on a High Note:</dt>
         <dd class="invisible">  The highest point in North America is Mt. McKinley in Denali National Park, which stands at 20,320 feet tall.</dd>
     </dl>
+    <button id="button">click me please</button>
+
+    <ul class="list">
+        <h3>Davy Crockett National Forest</h3>
+        <li>sdfsdfd</li>
+        <li>sdfsdf</li>
+        <li>sdfasdf</li>
+
+    </ul>
+<h3 id="nac">Nacadoches National Foreset</h3>
+    <ul id="cad" class="list">
+
+        <li>sdfsdf</li>
+        <li>sdfasf</li>
+        <li>sdfsdf</li>
+
+
+    </ul>
+    <ul class="list">
+        <h3>glacier mountain nation park</h3>
+        <li>sdfs</li>
+        <li>sdfsdf</li>
+        <li>dsfsad</li>
+
+    </ul>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
         var isclick = true;
-        $("#dt1").click(function () {
+        var isclick2 = true;
+        $(".dt").click(function () {
             if(isclick){
-                $("#dd1").css("display", "inline-block");
+                $(".invisible").css("display", "inline-block");
                 isclick = false;
             }
             else {
-                $("#dd1").css("display", "none");
+                $(".invisible").css("display", "none");
                 isclick = true;
-            }
+            }});
+        $("#button").click(function () {
+            if(isclick){
+                $("ul").each(function (index,el) {
+                    $(this).children().last().css("background-color", "yellow");
+                    isclick2 = false;
+                })}
+            else {
+                $("ul").css("background-color", "white");
+                isclick2 = true;
+            }});
+        $("h3").click(function () {
+            $(this).next().children().css("font-weight", "bold")
         })
+        $("li").click(function () {
+            $(this).parent().children().first().css("color", "blue")
+        })
+
+        $("#x").click(function () {
+            $("#news").slideUp(2500);
+        });
+
+        $("#nac").click(function () {
+            $("#cad").slideDown(1500);
+        })
+
     </script>
 </body>
 </html>
