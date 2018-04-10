@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <div id="posts"></div>
+
 </head>
 <body>
+<div id="posts"></div>
+<button id="button">Refresh</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script>
+    function callPost() {
+
+
+    $.get("data/blog.json").done(function (x) {
+        x.forEach(function (x) {
+            var cat = x.categories.join(" ");
+            var tit = x.title;
+            var cont = x.contents;
+            var date = x.date;
+
+            $("#posts").append(
+                "<div id='title'>" + tit + "</div><div id='date'>" + date + "</div><div id='content'>" + cont +"</div><div id='cat'>" + cat + "</div> <br>"
+            )
+        })})}
+        callPost();
+    $("#button").click(function () {
+        $("#posts").empty();
+        callPost();
+    });
+</script>
 </body>
 </html>
