@@ -16,6 +16,7 @@ function weatherCatcher(lat,long) {
     // todo create a function that checks the time code with the most current time and show that temp
     //todo create a function that grabs the lowest from each dtg and the highest
     // todo finish the data inputs
+    // todo add the weather icons this is a weather icon path => .list["0"].weather["0"].icon
     //todo clean it up and make it look better
     $.get("http://api.openweathermap.org/data/2.5/forecast/", {
         APPID: "7b9952426a6933c9c25736a27a18907d",
