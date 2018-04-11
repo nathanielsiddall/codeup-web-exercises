@@ -1,7 +1,5 @@
 var loc = { lat: 29.429447, lng: -98.491623 };
-
-(function () {
-
+    (function () {
 
     // ?var address = prompt("gimme an address");
 
@@ -46,10 +44,36 @@ var loc = { lat: 29.429447, lng: -98.491623 };
         draggable: true,
         map: map
 
+
     });
 
+    google.maps.event.addListener(marker, 'dragend', function (event) {
+        var result = "";
+        var lat = marker.getPosition().lat();
+        var long = marker.getPosition().lng();
+        console.log();
 
-    console.log(marker);
+
+
+        (function() {
+            $.get("http://api.openweathermap.org/data/2.5/forecast/", {
+                APPID: "7b9952426a6933c9c25736a27a18907d",
+                lat: lat,
+                lon: long,
+                units: "imperial"
+            }).done(function(data) {
+                console.log(data);
+
+               result = data.city.name;
+                $("box1").append(result);
+                console.log(result);
+
+
+            });
+
+        })();
+
+    });
 
 })();
 
