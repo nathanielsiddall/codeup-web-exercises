@@ -1,3 +1,24 @@
+
+// todo figure out why my geolocation throws a 404
+// $.post("https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54",
+//     {
+//         "wifiAccessPoints" :[
+//             {
+//                 macAddress: "f4:0f:24:30:aa:87",
+//                 signalStrength: "-43",
+//                 age: "0",
+//                 channel: "11",
+//                 signalToNoiseRatio: "0"
+//             }
+//         ]
+//     }
+// ).done(function (data) {
+//     console.log(data);
+// });
+
+
+
+
 var lat = 29.429447;
 var long = -98.491623;
 var info = [];
@@ -10,12 +31,14 @@ function ut(loc, data) {
 }
 function weatherCatcher(lat,long) {
 
-    $.get("http://api.openweathermap.org/data/2.5/forecast/", {
-        APPID: "7b9952426a6933c9c25736a27a18907d",
-        lat: lat,
-        lon: long,
-        units: "imperial"
-    }).done(function(data) {
+    $.get("http://api.openweathermap.org/data/2.5/forecast/",
+        {
+            APPID: "7b9952426a6933c9c25736a27a18907d",
+            lat: lat,
+            lon: long,
+            units: "imperial"
+         }
+    ).done(function(data) {
 
         var i = 0;
         var it = ["0", "7", "13", 5];
@@ -41,14 +64,15 @@ function weatherCatcher(lat,long) {
             i++;
             iti++;
         }
-        // var iconLocation = (data.list["0"].weather[0].icon);
-        // var iconaddress = "http://openweathermap.org/img/w";
+        // todo figure out why my icon grabber is throwing a No 'Access-Control-Allow-Origin failure
+        var iconLocation = (data.list["0"].weather[0].icon);
+        var iconaddress = "http://openweathermap.org/img/w";
 
         // $.get(iconaddress/*"http://openweathermap.org/img/w/" + iconLocation + ".png"*/)
         //     .done(function(icon) {
         //         console.log(icon);
         //         ut("#temp1",icon);
-
+        //
         // });
         $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="
             + latlng +"&key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54")
