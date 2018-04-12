@@ -4,6 +4,31 @@ var long = -98.491623;
 var info = [];
 var loc = { lat: lat , lng: long };
 
+function addressGrabber() {
+
+    var address = $("#text-box").val();
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({ "address": address }, function(results, status) {
+
+        if (status === google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map
+            });
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: infoWindowContent
+            });
+            infoWindow.open(map, marker);
+
+            loc = results[0].geometry.location;
+        } else {
+            alert("Geocoding was not successful - STATUS: " + status);
+        }
+    });
+}
 function ut(loc, data) {
     $(loc).empty();
     var result = data;
@@ -47,11 +72,6 @@ function weatherCatcher(lat,long) {
 
             iti++;
         }
-
-        // todo figure out why my icon grabber is throwing a No 'Access-Control-Allow-Origin failure
-        var iconLocation = (data.list["0"].weather[0].icon);
-        var iconaddress = "https://openweathermap.org/img/w" + iconLocation + ".png";
-
         $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="
             + latlng +"&key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54")
             .done(function(data) {
@@ -88,6 +108,7 @@ function weatherCatcher(lat,long) {
                 $("#image2").attr("src",img2);
                 var img3 = "https://openweathermap.org/img/w/" + info[23] + ".png";
                 $("#image3").attr("src",img3);
+
             });});}
 (function () {
     var map = new google.maps.Map(document.getElementById("map-canvas"),
@@ -107,4 +128,7 @@ function weatherCatcher(lat,long) {
         var long = marker.getPosition().lng();
         weatherCatcher(lat, long);
     });})();
+$("#btn").click(function () {
+    addressGrabber()
+});
 weatherCatcher(lat, long);

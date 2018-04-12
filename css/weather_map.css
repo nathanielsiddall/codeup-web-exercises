@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 #map-canvas {
-    height: 60vh;
+    height: 58vh;
     width: 100%;
 }
 #outer-wrapper {
@@ -23,7 +23,7 @@ body {
 }
 .inner-wrapper {
     color: #878787;
-    width: 30%;
+    padding-right: 1%;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,6 +32,7 @@ body {
     border-radius: 3px;
     border: 1px solid #D5D3D2;
     padding-left: 10px;
+    padding-bottom: 1%;
 }
 .type-wrapper {
     display: flex;
@@ -47,8 +48,20 @@ body {
 .temp {
     font-weight: bold;
     font-size: 20px;
+    float: right;
+    padding-top: 10%;
+    padding-right: 5%;
 }
 #image1 {
     height: 50px;
     width: 50px;
+}
+#text-box {
+    margin: 5%;
+    flex: 1;
+    height: 20px;
+    width: 20%;
+}
+#btn {
+
 }
