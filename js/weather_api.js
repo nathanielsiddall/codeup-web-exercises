@@ -1,24 +1,4 @@
 
-// todo figure out why my geolocation throws a 404
-// $.post("https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54",
-//     {
-//         "wifiAccessPoints" :[
-//             {
-//                 macAddress: "f4:0f:24:30:aa:87",
-//                 signalStrength: "-43",
-//                 age: "0",
-//                 channel: "11",
-//                 signalToNoiseRatio: "0"
-//             }
-//         ]
-//     }
-// ).done(function (data) {
-//     console.log(data);
-// });
-
-
-
-
 var lat = 29.429447;
 var long = -98.491623;
 var info = [];
@@ -31,7 +11,7 @@ function ut(loc, data) {
 }
 function weatherCatcher(lat,long) {
 
-    $.get("http://api.openweathermap.org/data/2.5/forecast/",
+    $.get("https://api.openweathermap.org/data/2.5/forecast/",
         {
             APPID: "7b9952426a6933c9c25736a27a18907d",
             lat: lat,
@@ -62,42 +42,52 @@ function weatherCatcher(lat,long) {
             i++;
             info[i] = data.list[it[iti]].main.pressure;
             i++;
+            info[i] = data.list[it[iti]].weather[0].icon;
+            i++;
+
             iti++;
         }
+
         // todo figure out why my icon grabber is throwing a No 'Access-Control-Allow-Origin failure
         var iconLocation = (data.list["0"].weather[0].icon);
-        var iconaddress = "http://openweathermap.org/img/w";
+        var iconaddress = "https://openweathermap.org/img/w" + iconLocation + ".png";
 
-        // $.get(iconaddress/*"http://openweathermap.org/img/w/" + iconLocation + ".png"*/)
-        //     .done(function(icon) {
-        //         console.log(icon);
-        //         ut("#temp1",icon);
-        //
-        // });
         $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="
             + latlng +"&key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54")
             .done(function(data) {
-                var state = "" + data.results[3].address_components["0"].long_name;
+
+               try { var state = "" + data.results[3].address_components["0"].long_name;}
+               catch (x) {
+                   state = null;
+                   y = "We don't have any data for that place. try again";
+                   alert(y);
+               }
                 state = "" + state;
                 ut("#name-box", city  + ", " + state);
                 ut("#temp1",info[0]  + "°/ " + info[1] + "°");
                 ut("#type1", info[2] + ": ");
                 ut("#extype1", info[3]);
                 ut("#humidity1","humidity: " + info[4]);
-                ut("#wind1", info[5]);
-                ut("#pressure1", info[6]);
-                ut("#temp2",info[7]  + "°/ " + info[8] + "°");
-                ut("#type2", info[9] + ": ");
-                ut("#extype2", info[10]);
-                ut("#humidity2","humidity: " + info[11]);
-                ut("#wind2", info[12]);
-                ut("#pressure3", info[13]);
-                ut("#temp3",info[14]  + "°/ " + info[15] + "°");
-                ut("#type3", info[16] + ": ");
-                ut("#extype3", info[17]);
-                ut("#humidity3","humidity: " + info[18]);
-                ut("#wind3", info[19]);
-                ut("#pressure3", info[20]);
+                ut("#wind1","wind Speed: " + info[5]);
+                ut("#pressure1","Barometric Pressure: " + info[6]);
+                ut("#temp2",info[8]  + "°/ " + info[9] + "°");
+                ut("#type2", info[10] + ": ");
+                ut("#extype2", info[11]);
+                ut("#humidity2","humidity: " + info[12]);
+                ut("#wind2","wind Speed: " + info[13]);
+                ut("#pressure2","Barometric Pressure: " + info[14]);
+                ut("#temp3",info[16]  + "°/ " + info[17] + "°");
+                ut("#type3", info[18] + ": ");
+                ut("#extype3", info[19]);
+                ut("#humidity3","humidity: " + info[20]);
+                ut("#wind3", "wind Speed: " + info[21]);
+                ut("#pressure3","Barometric Pressure: " +  info[22]);
+                img = "https://openweathermap.org/img/w/" + info[7] + ".png";
+                $("#image1").attr("src",img);
+                var img2 = "https://openweathermap.org/img/w/" + info[15] + ".png";
+                $("#image2").attr("src",img2);
+                var img3 = "https://openweathermap.org/img/w/" + info[23] + ".png";
+                $("#image3").attr("src",img3);
             });});}
 (function () {
     var map = new google.maps.Map(document.getElementById("map-canvas"),

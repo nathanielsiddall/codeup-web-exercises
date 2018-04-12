@@ -1,40 +1,37 @@
 body {
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: roboto, "Trebuchet MS", sans-serif;
+    background-color: #E8E8EE ;
+    margin: 0;
 }
 #map-canvas {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
 }
-
 #outer-wrapper {
-/
-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #name-box {
-    margin-top: 10px;
-    flex: 1 0 100%;
+    padding: 5%;
     width: 90%;
-    height: 50px;
     font-size: 22px;
     font-weight: bold;
-    align-content: center;
-    justify-content: center;
+    justify-items: center;
 }
 .inner-wrapper {
     color: #878787;
-    margin-top: 10px;
     width: 30%;
-    height: 100px;
-    border: 1px solid #878787;
     flex-wrap: wrap;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #D5D3D2;
+    padding-left: 10px;
 }
 .type-wrapper {
     display: flex;
@@ -51,5 +48,7 @@ width: 100%;
     font-weight: bold;
     font-size: 20px;
 }
-
-
+#image1 {
+    height: 50px;
+    width: 50px;
+}
