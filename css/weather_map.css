@@ -2,7 +2,7 @@ body {
     font-family: "Trebuchet MS", sans-serif;
 }
 #map-canvas {
-    height: 50vh;
+    height: 80vh;
     width: 100%;
 }
 

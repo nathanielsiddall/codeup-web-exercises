@@ -16,7 +16,6 @@ function weatherCatcher(lat,long) {
         lon: long,
         units: "imperial"
     }).done(function(data) {
-        console.log(data);
 
         var i = 0;
         var it = ["0", "7", "13", 5];
@@ -39,7 +38,6 @@ function weatherCatcher(lat,long) {
             info[i] = data.list[it[iti]].wind.speed;
             i++;
             info[i] = data.list[it[iti]].main.pressure;
-            console.log("iti: " + it[iti]);
             i++;
             iti++;
         }
@@ -90,7 +88,7 @@ function weatherCatcher(lat,long) {
             draggable: true,
             map: map
     });
-    google.maps.event.addListener(marker, 'dragend', function (event) {
+    google.maps.event.addListener(marker, 'dragend', function () {
         var lat = marker.getPosition().lat();
         var long = marker.getPosition().lng();
         weatherCatcher(lat, long);
