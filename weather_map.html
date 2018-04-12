@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/weather_map.css">
     <style>
         body {
             font-family: "Trebuchet MS", sans-serif;
@@ -12,7 +13,7 @@
         width: 100%;
         }
 
-        #box {
+        #outer-wrapper {
             /
             width: 100%;
             display: flex;
@@ -20,7 +21,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
-        #box0 {
+        #name-box {
             margin-top: 10px;
             flex: 1 0 100%;
             width: 90%;
@@ -28,21 +29,30 @@
             font-size: 22px;
             font-weight: bold;
             align-content: center;
+            justify-content: center;
         }
-        .box-class {
+        .inner-wrapper {
             color: #878787;
             margin-top: 10px;
             width: 30%;
             height: 100px;
-            border: 1px solid black;
+            border: 1px solid #878787;
             flex-wrap: wrap;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
-        #box1 {
+        .type-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
 
+        .type {
+            font-weight: bold;
+            color: #000;
         }
         .temp {
             font-weight: bold;
@@ -54,29 +64,46 @@
     </style>
 </head>
 <body>
-
-
-
 <div id="map-canvas"></div>
-<div id="box">
-    <div  id="box0"></div>
-<div class="box-class" id="box1">
-    <div id="temp1" class="temp"></div>
+<div id="outer-wrapper">
+    <div id="name-box"></div>
+    <div class="inner-wrapper">
+        <div class="temp" id="temp1"></div>
+        <div class="type-wrapper">
+            <div class="type" id="type1"></div>
+            <div id="extype1"></div>
+        </div>
+        <div id="humidity1"></div>
+        <div id="wind1"></div>
+        <div id="pressure1"></div>
+    </div>
+    <div class="inner-wrapper">
+        <div class="temp" id="temp2"></div>
+        <div class="type-wrapper">
+            <div class="type" id="type2"></div>
+            <div id="extype2"></div>
+        </div>
+        <div id="humidity2"></div>
+        <div id="wind2"></div>
+        <div id="pressure2"></div>
+    </div>
+    <div class="inner-wrapper">
+        <div class="temp" id="temp3"></div>
+        <div class="type-wrapper">
+            <div class="type" id="type3"></div>
+            <div id="extype3"></div>
+        </div>
+        <div id="humidity3"></div>
+        <div id="wind3"></div>
+        <div id="pressure3"></div>
+    </div>
 </div>
-<div class="box-class" id="b"></div>
-<div class="box-class" id="c"></div>
-</div>
-
-
-
-
-
-
-
 <!--end of the html-->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjkCN41HBxCX8VFdtLANlIiyqbVmBz54"></script>
 <script src="js/google-api.js"></script>
+
+
 
 
 
