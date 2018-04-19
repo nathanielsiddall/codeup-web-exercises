@@ -50,6 +50,8 @@
 
 
     function jsonData() {
+
+
         $.get("data/inventory.json").done(function (x) {
             var facepalm = " ";
 
@@ -62,9 +64,12 @@
     jsonData();
 
     $("#bttn").click(function () {
-        $("#insertProducts").empty();
+        var kill = setInterval(function () {
+            console.log("iterationg");
+
+            $("#insertProducts").empty();
         jsonData();
-    });
+        },20000) });
 
 
     // TODO: Take the data from inventory.json and append it to the products table

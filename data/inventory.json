@@ -1,21 +1,24 @@
 [
     {
-        "title": "Hammer",
-        "quantity": 25,
+        "title": "water",
+        "quantity": 17,
         "categories": [
             "tool"
         ],
         "price": 20
     }, {
-        "title": "Drill",
+        "title": "cellphone",
         "quantity": 5,
         "categories": [
             "tool",
-            "powered"
+            "powered",
+            "electronic",
+            "sony",
+            "communications"
         ],
         "price": 100
     }, {
-        "title": "Mower",
+        "title": "i wanna go to the range",
         "quantity": 5,
         "categories": [
             "tool",
@@ -24,7 +27,7 @@
         ],
         "price": 200
     }, {
-        "title": "Screwdrivers",
+        "title": "how to begin doing a thing",
         "quantity": 25,
         "categories": [
             "tool"
